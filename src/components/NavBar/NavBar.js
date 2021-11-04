@@ -32,9 +32,9 @@ const TopButtons = () => {
         <div className="navBar__menu">
             <button className="navBar__menu__walletBtn" onClick={ connectWallet } >CONNECT WALLET</button>
             <div className="navBar__menu__icons">
-                <a href="#javascript;"><img src={ topIcon1 } alt="logo"></img></a>
-                <a href="#javascript;"><img src={ topIcon2 } alt="logo"></img></a>
-                <a href="#javascript;"><img src={ topIcon3 } alt="logo"></img></a>
+                <a href="https://discord.gg/pdHyHZ9dJ3"><img src={ topIcon1 } alt="logo"></img></a>
+                <a href="https://twitter.com/DreamyGeeks"><img src={ topIcon2 } alt="logo"></img></a>
+                <a href="https://instagram.com/DreamyGeeks"><img src={ topIcon3 } alt="logo"></img></a>
             </div>
 
             <div className="navBar__menu__dropDownMenu">
