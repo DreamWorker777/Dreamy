@@ -1,0 +1,41 @@
+.slider {
+    position: relative;
+
+    padding-top: calc(5vw);
+    padding-bottom: calc(5vw);
+
+    &__eachItem {
+        display: flex;
+        justify-content: center;
+
+        div {
+            width: calc(18vw);
+            height: calc(18vw);
+            background-size: cover;
+        }
+    }
+
+    .indicator {
+        width: calc(5vw);
+        height: calc(0.5vw);
+        margin: calc(1vw);
+        cursor: pointer;
+        border: unset;
+        background: #d73de1;
+    }
+
+    .indicator.active {
+        background: #00aeef;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        &__eachItem {
+            div {
+                width: calc(30vw);
+                height: calc(30vw);
+            }
+        }
+    }
+}

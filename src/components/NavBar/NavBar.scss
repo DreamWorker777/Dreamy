@@ -1,0 +1,166 @@
+.navBar {
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        &__text {
+            text-transform: uppercase;
+            color: white;
+            font-size: 50px;
+            font-family: digital;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+
+        &__walletBtn {
+            font-family: Cygnito Mono;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+        
+            /* WHITTE */
+        
+            color: #FFFFFF;
+        
+            /* Inside Auto Layout */
+        
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        
+            padding: 5px 10px;
+            outline-style: unset;
+            border: unset;
+        
+            background-color: rgb(25, 25, 25) !important;
+            border: 1px solid #FFFFFF;
+            margin-right: 30px;
+
+            &:hover {
+                cursor: pointer;
+                border: 1px solid #000000;
+                background-color: #FFFFFF !important;
+                color: rgb(25, 25, 25);
+            }
+        }
+
+        &__icons {
+            display: flex;
+            align-items: center;
+
+            a {
+                margin-right:15px;
+                margin-left: 15px;
+
+                img {
+                    width: 28px;
+                }
+            }
+        }
+
+        &__dropDownMenu {
+            position: relative;
+            display: none;
+
+            &:hover {
+                .navBar__menu__dropDownMenu__content {
+                    display: block;
+                }
+            }
+
+            &__icon {
+                border: none;
+                cursor: pointer;
+                width: 30px;
+            }
+
+            &__content {
+                display: none;
+                position: absolute;
+                background-color: black;
+                min-width: 200px;
+                z-index: 221;
+                right: 0;
+                top: 23px;
+
+                a {
+                    font-size: 20px;
+                    color: white;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    .navBar {
+        padding: 10px 20px;
+
+        &__menu {
+            &__icons {
+                display: none;
+            }
+
+            &__dropDownMenu {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .navBar {    
+        &__logo {
+            &__text {
+                font-size: 8.25vw;
+            }
+        }
+    
+        &__menu {
+            &__walletBtn {
+                font-size: 2.3vw;
+                line-height: 3.5vw;
+                padding: 1vw 1.7vw;
+                margin-right: 5vw;
+            }
+    
+            &__dropDownMenu {
+                &__icon {
+                    width: 5vw;
+                }
+    
+                &__content {
+                    min-width: 33vw;
+                    top: 4vw;
+    
+                    a {
+                        font-size: 3.3vw;
+                        padding: 1.7vw 3.3vw;
+                    }
+                }
+            }
+        }
+    }
+}

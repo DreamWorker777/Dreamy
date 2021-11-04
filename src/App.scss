@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'digital';
+  src: local('digital'),
+       url('./assets/fonts/digital-7.ttf') format('truetype'), /* Super Modern Browsers */
+}
+
+@font-face {
+  font-family: 'digitalMono';
+  src: local('digitalMono'),
+       url('./assets/fonts/digital-7 (mono).ttf') format('truetype'), /* Super Modern Browsers */
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+
+  font-family: digital;
+  color: white;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: unset;
+}
+
+button {
+  outline: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+.App {
+  background: #191919;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  max-width: 1400px;
+  position: relative;
+  padding: 0 60px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.notification-container {
+  width: 600px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .container {
+    padding: 0 0px;
+  }
+
+  .notification-container {
+    width: 80%;
+  }
+}

@@ -1,0 +1,10 @@
+.about {
+    position: relative;
+    z-index: 101;
+
+    &__back {
+        img {
+            width: 100%;
+        }
+    }
+}
