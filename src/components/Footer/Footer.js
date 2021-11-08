@@ -32,9 +32,9 @@ export const Footer = () => {
                     </div>
 
                     <div className="footer__links__buttons__menu">
-                        <a href="#javascript;">JOIN DISCORD</a>
-                        <a href="#javascript;">TWITTER</a>
-                        <a href="#javascript;">INSTAGRAM</a>
+                        <a href="https://discord.gg/pdHyHZ9dJ3">JOIN DISCORD</a>
+                        <a href="https://twitter.com/DreamyGeeks">TWITTER</a>
+                        <a href="https://instagram.com/DreamyGeeks">INSTAGRAM</a>
                         <a href="#javascript;">FACEBOOK</a>
                     </div>
                 </div>
