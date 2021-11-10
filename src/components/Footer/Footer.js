@@ -1,6 +1,9 @@
 import { Link } from 'react-scroll'
 
 import './Footer.scss';
+import etherscan from '../../assets/img/etherscan button.png';
+import opensea from '../../assets/img/opensea button.png';
+import calendar from '../../assets/img/nft calendar-01.png';
 
 const menu = [
     "about", "rarity", "roadmap", "team"
@@ -8,7 +11,19 @@ const menu = [
 
 export const Footer = () => {
     return (
-        <section className="footer">
+        <section className="footer container">
+            <div className="footer__buttons">
+                <div className="footer__buttons__item">
+                    <a><img alt="pic" src={etherscan}></img></a>
+                </div>
+                <div className="footer__buttons__item">
+                    <a href="https://OpenSea.io/collection/DreamyGeeks" target="_blank"><img alt="pic" src={opensea}></img></a>
+                </div>
+                <div className="footer__buttons__item">
+                    <a href="https://nftcalendar.io/event/dreamy-geeks/" target="_blank"><img alt="pic" src={calendar}></img></a>
+                </div>
+            </div>
+
             <div className="footer__links">
                 <div className="footer__links__title">
                     DREAMY GEEKS

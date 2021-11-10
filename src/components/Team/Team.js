@@ -1,5 +1,5 @@
 import './Team.scss';
-import back from '../../assets/img/green block.png';
+import back from '../../assets/img/green block.jpg';
 
 export const Team = () => {
     return (

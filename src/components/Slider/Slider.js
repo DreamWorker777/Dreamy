@@ -5,14 +5,14 @@ import 'react-slideshow-image/dist/styles.css'
 
 import './Slider.scss'; 
 
-import slideImg1 from '../../assets/img/slider/1.png';
-import slideImg2 from '../../assets/img/slider/2.png';
-import slideImg3 from '../../assets/img/slider/3.png';
-import slideImg4 from '../../assets/img/slider/4.png';
-import slideImg5 from '../../assets/img/slider/5.png';
-import slideImg6 from '../../assets/img/slider/6.png';
-import slideImg7 from '../../assets/img/slider/7.png';
-import slideImg8 from '../../assets/img/slider/8.png';
+import slideImg1 from '../../assets/img/slider/1.jpg';
+import slideImg2 from '../../assets/img/slider/2.jpg';
+import slideImg3 from '../../assets/img/slider/3.jpg';
+import slideImg4 from '../../assets/img/slider/4.jpg';
+import slideImg5 from '../../assets/img/slider/5.jpg';
+import slideImg6 from '../../assets/img/slider/6.jpg';
+import slideImg7 from '../../assets/img/slider/7.jpg';
+import slideImg8 from '../../assets/img/slider/8.jpg';
 
 const slideImages = [
     slideImg1, slideImg2, slideImg3, slideImg4, slideImg5, slideImg6, slideImg7, slideImg8

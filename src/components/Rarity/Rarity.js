@@ -1,5 +1,5 @@
 import './Rarity.scss';
-import back from '../../assets/img/blue block.png';
+import back from '../../assets/img/blue block.jpg';
 
 export const Rarity = () => {
     return (

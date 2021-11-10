@@ -33,20 +33,55 @@
                 width: 100%;
             }
 
-            button {
+            &__mint {
                 width: 100%;
                 background: #19938d;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-                text-transform: uppercase;
-                font-size: 120px;
-                letter-spacing: 5px;
-                padding: 5px 0;
-                margin-bottom: 20px;
-                font-family: digital;
-                color: white;
+                button {
+                    background: transparent;    
+                }
 
-                &:hover {
-                    background: rgb(17, 158, 158);
+                &__minus {
+                    width: 10%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0;
+                    
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &__plus {
+                    width: 10%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &__value {
+                    font-size: 80px;
+                    padding: 0 5%;
+                }
+
+                &__place {
+                    text-transform: uppercase;
+                    font-size: 100px;
+                    letter-spacing: 5px;
+                    padding: 5px 0;
+                    font-family: digital;
+                    color: white;
+
+                    margin-left: 7%;
                 }
             }
         }
@@ -57,11 +92,16 @@
     .intro {
         &__drop {
             &__date {
-                button {
-                    font-size: 7vw;
-                    letter-spacing: 0.33vw;
-                    padding: 0.33vw 0;
-                    margin-bottom: 1.33vw;
+                &__mint {
+                    &__value {
+                        font-size: 5vw;
+                    }
+    
+                    &__place {
+                        font-size: 6vw;
+                        letter-spacing: 0.33vw;
+                        padding: 0.33vw 0;
+                    }
                 }
             }
         }

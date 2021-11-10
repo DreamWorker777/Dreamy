@@ -1,6 +1,6 @@
 import './About.scss';
 
-import back from '../../assets/img/orange block.png';
+import back from '../../assets/img/orange block.jpg';
 
 export const About = () => {
     return (

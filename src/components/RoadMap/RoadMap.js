@@ -1,5 +1,5 @@
 import './RoadMap.scss';
-import back from '../../assets/img/purple block.png';
+import back from '../../assets/img/purple block.jpg';
 
 export const Rarity = () => {
     return (
